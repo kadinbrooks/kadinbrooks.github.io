@@ -64,7 +64,7 @@ window.onload = function() {
     requestAnimationFrame(update);
     setInterval(placePipes, 1750);
     document.addEventListener("keydown", moveBirdKey);
-    board.addEventListener("ontouchstart", moveBirdTouch);
+    document.addEventListener("click", moveBirdTouch);
 }
 
 function update() {
